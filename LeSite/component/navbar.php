@@ -3,6 +3,8 @@
   <div >
     <ul >
       <li><a href="index.php">Home</a></li>
+      <li><a href="projects.php">Projects</a></li>
+      <li><a href="#modal1">Contact Us</a></li>
       <li>
         <form action="pays.php" method="post" >
           <select name='chooseCountry'>

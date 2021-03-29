@@ -10,6 +10,7 @@
         <?php $pays = CommandSQL($pdo, 'SELECT * FROM countries WHERE id like "'.$_POST["chooseCountry"].'"'); ?>
         <?php $article = CommandSQL($pdo, 'SELECT * FROM articles WHERE country_id like "'.$_POST["chooseCountry"].'"');?>
         <?php require "component/navbar.php"; ?>
+        <?= $pays['0']['name'] ?>
         </br>
         <?php foreach ($article as $article) { ?>
             <a href="article.php?article=<?php echo $article["name"] ?>"><?php echo $article["name"] ?></a>

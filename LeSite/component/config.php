@@ -15,9 +15,4 @@ function CommandSQL($pdo, $sql) {
     return $pre->fetchAll(PDO::FETCH_ASSOC);
 }
 
-function CommandSecureSQL($pdo, $sql, $array) {
-    $pre = $pdo->prepare($sql);
-    $pre->execute($array);
-}
-
 ?>
